@@ -11,7 +11,7 @@ st.sidebar.write("The Iris flower data set or Fisher's Iris data set is a multiv
 col1,col2 = st.columns(2)
 col1.write("pie chart of species")
 col2.write("bar chart of species")
-df  = pd.read_csv("data/Iris.csv")
+df  = pd.read_csv("Iris.csv")
 with col1:
     class_data=df['class'].value_counts()
     fig,ax = plt.subplots()
